@@ -1,2 +1,1 @@
-# frontend-mentor-challenges
-This Repo have frontend mentor challenges
+This is a template
