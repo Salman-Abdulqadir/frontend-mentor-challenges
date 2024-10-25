@@ -1,5 +1,12 @@
+import Calculator from "./components/Calculator";
+import { CalculatorContextProvider } from "./contexts/calculator/context";
+
 const App = () => {
-  return <div className="bg-primary">App</div>;
+  return (
+    <CalculatorContextProvider>
+      <Calculator />
+    </CalculatorContextProvider>
+  );
 };
 
 export default App;
