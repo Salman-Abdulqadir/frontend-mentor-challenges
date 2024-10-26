@@ -1,11 +1,9 @@
 import Calculator from "./components/Calculator";
-import { CalculatorContextProvider } from "./contexts/calculator/context";
-
 const App = () => {
   return (
-    <CalculatorContextProvider>
+    <div className="font-jakarta font-[500] text-slate-900">
       <Calculator />
-    </CalculatorContextProvider>
+    </div>
   );
 };
 
