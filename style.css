@@ -1,0 +1,118 @@
+:root {
+  --pale-blue-1: hsl(225, 100%, 98%);
+  --pale-blue-2: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --bright-blue-shadow: hsla(245, 75%, 52%, 45%);
+  --bright-blue-hover: hsla(245, 75%, 52%, 50%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --mobile: 375px;
+  --desktop: 1440px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+html {
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  min-height: 100vh;
+  padding: 16px;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue-2);
+}
+h1 {
+  font-size: 1.8rem;
+}
+a {
+  font-weight: bold;
+  font-size: 1rem;
+}
+a:hover {
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+x.gap-8 {
+  gap: 8px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-24 {
+  gap: 24px;
+}
+.primary-text {
+  color: var(--dark-blue);
+}
+.secondary-text {
+  color: var(--desaturated-blue);
+}
+.card-wrapper {
+  flex: 1;
+  justify-content: center;
+}
+.card {
+  background-color: white;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.card-details {
+  width: 325px;
+  margin: auto;
+  padding-block: 50px;
+  text-align: center;
+}
+.card-details-plans {
+  width: 100%;
+  background-color: var(--pale-blue-1);
+  padding: 16px;
+  border-radius: 16px;
+}
+.card-payment-btn {
+  padding: 12px 16px;
+  border-radius: 12px;
+  background-color: var(--bright-blue);
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px var(--bright-blue-shadow);
+}
+.card-payment-btn:hover {
+  background-color: var(--bright-blue-hover);
+}
+.card-cancel-order-btn {
+  font-weight: bold;
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+}

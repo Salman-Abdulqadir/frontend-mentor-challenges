@@ -1,25 +1,21 @@
-# Frontend Mentor Challenges
+# Frontend Mentor - Order summary card solution
 
-This repository contains my solutions to various Frontend Mentor challenges.
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Completed Projects
+## Overview
 
-Here's a list of completed projects with links to their Frontend Mentor pages, preview images, and live demo links:
+### The challenge
 
-### 1. Mortgage repayment calculator
-This mortgage calculator is an excellent project for practicing working with forms, client-side validation, and updating the DOM.
+Users should be able to:
 
-- [Preview](https://fe-mentor-mortgage.netlify.app/)
+- See hover states for interactive elements
 
-- [Frontend Mentor Challenge Page](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73)
+### Screenshot
 
-- Technologies used: React, Tailwind CSS, TypeScript, Vite
+![](./images/screenshot.png)
 
-- Instructions
-```bash
-  git clone https://github.com/your-username/frontend-mentor-challenges.git
-  git checkout mortgage-repayment-calculator
-```
-![Mortgage repayment calculator](./assets/mortgage-repayment-calculator.png)
+### Built with
 
-
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
