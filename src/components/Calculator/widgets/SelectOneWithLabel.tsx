@@ -40,7 +40,9 @@ const InputWithLabel: React.FC<IInputWithLabelProp> = ({
           );
         })}
       </div>
-      {errorMessage && <h4 className="text-red-100 text-sm">{errorMessage}</h4>}
+      {errorMessage && (
+        <h4 className="text-danger-100 text-sm">{errorMessage}</h4>
+      )}
     </div>
   );
 };

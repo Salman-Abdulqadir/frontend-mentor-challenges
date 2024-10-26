@@ -7,7 +7,7 @@ export default {
         jakarta: ['"Plus Jakarta Sans"', "sans-serif"],
       },
       colors: {
-        red: {
+        danger: {
           100: "hsl(4, 69%, 50%)",
         },
         lime: {

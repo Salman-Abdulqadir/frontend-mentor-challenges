@@ -21,8 +21,10 @@ const InputWithLabel: React.FC<IInputWithLabelProp> = ({
   const getPrefixSuffixBox = (text: string) => {
     return (
       <div
-        className={` bg-slate-100 font-[700] p-3 ${
-          errorMessage ? "bg-red-100 text-white" : "bg-slate-100 text-slate-700"
+        className={`font-[700] p-3 ${
+          errorMessage
+            ? "bg-danger-100 text-white"
+            : "bg-slate-100 text-slate-700"
         }`}
       >
         {text}
@@ -34,7 +36,7 @@ const InputWithLabel: React.FC<IInputWithLabelProp> = ({
       <label className="text-slate-700">{title}</label>
       <div
         className={`flex border-[1px] overflow-hidden rounded-[4px] ${
-          errorMessage ? "border-red-100" : "border-slate-700"
+          errorMessage ? "border-danger-100" : "border-slate-700"
         }`}
       >
         {prefix && getPrefixSuffixBox(prefix)}
@@ -47,7 +49,9 @@ const InputWithLabel: React.FC<IInputWithLabelProp> = ({
         />
         {suffix && getPrefixSuffixBox(suffix)}
       </div>
-      {errorMessage && <h4 className="text-red-100 text-sm">{errorMessage}</h4>}
+      {errorMessage && (
+        <h4 className="text-danger-100 text-sm">{errorMessage}</h4>
+      )}
     </div>
   );
 };
