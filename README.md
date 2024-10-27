@@ -29,7 +29,7 @@ This mortgage calculator is an excellent project for practicing working with for
 
 A perfect project for newbies who are starting to build confidence with layouts!
 
-- [Preview](https://fe-mentor-salman.netlify.app/)
+- [Preview](https://salman-abdulqadir.github.io/frontend-mentor-challenges/)
 
 - [Frontend Mentor Challenge Page](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
 
