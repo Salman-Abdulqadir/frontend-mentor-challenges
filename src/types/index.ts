@@ -15,3 +15,5 @@ export interface IProduct {
 }
 
 export type CartType = { [keys: string]: IProduct };
+
+export type ContextActionType = { type: string; payload: any };
