@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { CartContext } from "../../contexts/cart.context";
 import confirmedIconSrc from "../../assets/images/icon-order-confirmed.svg";
 import { IProduct } from "../../types";
@@ -13,15 +13,32 @@ const ConfirmationModal = () => {
     refreshCart();
     setModalOpen(false);
   };
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === `Escape` && modalOpen) {
+        setModalOpen(false);
+      }
+    };
+    window.addEventListener("keydown", (e) => handleEscape(e));
+    return () => window.removeEventListener("keydown", (e) => handleEscape(e));
+  }, []);
   return (
-    <dialog className="modal" open={modalOpen}>
-      <div className="modal-box space-y-3 w-full md:w-[60vh]">
-        <img src={confirmedIconSrc} alt="Confirmed order logo" />
+    <dialog className="modal bg-black bg-opacity-40" open={modalOpen}>
+      <div className="modal-box flex flex-col gap-3 w-full h-[500px] md:w-[60vh]">
+        <img
+          src={confirmedIconSrc}
+          className="w-fit h-fit"
+          alt="Confirmed order logo"
+        />
         <h2 className="font-bold text-2xl">Order Confirmed</h2>
         <p className="text-rose-500">We hope you enjoy your food</p>
-        <div className="space-y-4 bg-rose-50 p-4 rounded-md">
+        <div className="space-y-4 bg-rose-50 p-4 rounded-md flex-1">
           {cartItems?.map((item: IProduct) => (
-            <div className="border-b-[1px] pb-3 flex items-center justify-between">
+            <div
+              className="border-b-[1px] pb-3 flex items-center justify-between"
+              key={`CART_CONFIRMATION_PRODUCT_${item?.id}`}
+            >
               <div className="flex gap-2">
                 <img
                   src={item.image.thumbnail}

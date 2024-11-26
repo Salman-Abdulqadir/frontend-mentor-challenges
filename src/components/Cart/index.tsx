@@ -44,7 +44,7 @@ const Cart = () => {
     </>
   );
   return (
-    <div className="py-4 rounded-md bg-white flex flex-col gap-4 max-h-full max-w-[350px]">
+    <div className="py-4 rounded-md bg-white flex flex-col gap-4 h-full w-[350px]">
       <div className="text-custom-red font-bold text-xl px-4">
         Your Cart ({itemCount})
       </div>
