@@ -1,5 +1,11 @@
+import Form from "./components/Form";
+
 const App = () => {
-  return <div className="bg-primary">App</div>;
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Form />
+    </div>
+  );
 };
 
 export default App;
