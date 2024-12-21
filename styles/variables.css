@@ -1,0 +1,23 @@
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(220, 16%, 96%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --body-font-size: 18px;
+  --global-inline-padding: 64px;
+  --gradient-bg: linear-gradient(
+    to right,
+    var(--lime-green),
+    var(--bright-cyan)
+  );
+  --mobile-size: 500px;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --global-inline-padding: 16px;
+  }
+}

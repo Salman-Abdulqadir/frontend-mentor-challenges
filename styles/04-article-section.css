@@ -1,0 +1,25 @@
+.article-section {
+  padding-inline: var(--global-inline-padding);
+  min-height: 75vh;
+  background-color: var(--very-light-gray);
+  gap: 48px;
+}
+.article-list {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.article-card {
+  flex: 1 1 250px;
+  background-color: var(--white);
+  border-radius: 8px;
+  max-width: 500px;
+  min-height: 100%;
+}
+.article-img {
+  border-start-start-radius: 8px;
+  border-start-end-radius: 8px;
+  min-height: 250px;
+}
+.article-card-details {
+  gap: 8px;
+}

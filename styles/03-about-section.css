@@ -1,0 +1,13 @@
+.about-section {
+  padding-inline: var(--global-inline-padding);
+  min-height: 75vh;
+  background-color: var(--light-grayish-blue);
+  gap: 48px;
+}
+.services {
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1 1 250px;
+}

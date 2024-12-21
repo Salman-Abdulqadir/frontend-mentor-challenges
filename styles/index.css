@@ -1,0 +1,96 @@
+@import url(./variables.css);
+@import url(./01-nav-bar.css);
+@import url(./02-hero-section.css);
+@import url(./03-about-section.css);
+@import url(./04-article-section.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Public Sans", serif;
+  font-optical-sizing: auto;
+  font-size: var(--body-font-size);
+}
+body {
+  overflow-x: hidden;
+}
+main {
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 200;
+  color: var(--dark-blue);
+}
+p {
+  font-size: 0.875rem;
+  color: var(--dark-blue);
+  opacity: 0.5;
+}
+h5 {
+  opacity: 0.5;
+}
+img {
+  max-width: 100%;
+}
+/* UTITLITIES */
+.flex {
+  display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: start;
+}
+.no-wrap {
+  flex-wrap: nowrap;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-24 {
+  gap: 24px;
+}
+.p-16 {
+  padding: 16px;
+}
+.content {
+  display: contents;
+}
+.primary-btn {
+  background: var(--gradient-bg);
+  border-radius: 24px;
+  padding: 12px 24px;
+  border: none;
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+.primary-btn:hover {
+  opacity: 0.8;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
