@@ -93,6 +93,7 @@ const renderArticles = () => {
 
     const title = document.createElement("h4");
     title.innerText = article.title;
+    title.className = "link";
 
     const desc = document.createElement("p");
     desc.innerText = article.desc;
@@ -113,7 +114,7 @@ const renderArticles = () => {
 };
 
 const renderSocialMediaLinks = () => {
-  const socialMediaLinks = [
+  const links = [
     {
       logo: "./images/icon-facebook.svg",
       alt: "facebook",
@@ -140,11 +141,29 @@ const renderSocialMediaLinks = () => {
       link: "https://instagram.com",
     },
   ];
+
+  const linksContainer = document.getElementById("social-media-links");
+  if (!linksContainer) return;
+  const socialMediaLinks = links.map((link) => {
+    const { logo: logoSrc, alt, link: url } = link;
+    const logo = document.createElement("img");
+    logo.src = logoSrc;
+    logo.alt = alt;
+    logo.style = {
+      color: "black",
+    };
+    const a = document.createElement("a");
+    a.href = url;
+    a.appendChild(logo);
+    return a;
+  });
+  linksContainer.append(...socialMediaLinks);
 };
 
 function main() {
   renderServices();
   renderArticles();
+  renderSocialMediaLinks();
 }
 
 main();
