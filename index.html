@@ -25,16 +25,44 @@
         <div class="nav-logo">
           <img src="./images/logo.svg" alt="easy-bank-logo" class="logo" />
         </div>
-        <ul class="nav-links flex gap-16">
+        <div class="desktop-nav">
+          <ul class="nav-links flex gap-16">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <button class="primary-btn">Request Invite</button>
+        <button id="mobile-nav-btn"></button>
+      </nav>
+      <div class="mobile-nav">
+        <ul class="nav-links flex-col gap-16">
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
           <li>Blog</li>
           <li>Careers</li>
         </ul>
-        <button class="primary-btn">Request Invite</button>
-      </nav>
-
+      </div>
+      <section class="hero-section flex">
+        <div class="flex-col gap-24 align-start">
+          <h1>
+            Next generation <br />
+            digital banking
+          </h1>
+          <p>
+            Take your financial life online. Your EasyBank account <br />
+            will be a one-stop-shop for spending, shopping, <br />
+            budgeting, investing, and much more.
+          </p>
+          <button class="primary-btn">Request Invite</button>
+        </div>
+        <div class="hero-image">
+          <img src="./images/image-mockups.png" alt="image-mockups" />
+        </div>
+      </section>
       <section class="about-section flex-col justify-center">
         <div class="flex-col gap-16">
           <h2>Why choose Easybank?</h2>
@@ -49,28 +77,48 @@
           class="flex align-start justify-between gap-16 services"
         ></div>
       </section>
-      <div class="article-section flex-col justify-center">
+      <section class="article-section flex-col justify-center">
         <h2>Latest Articles</h2>
         <div
           id="articles-container"
-          class="flex align-start justify-between gap-16 article-list"
+          class="flex justify-between gap-16 article-list"
         ></div>
-      </div>
-
-      By About Us Contact Blog Careers Support Privacy Policy Request Invite ©
-      Easybank. All Rights Reserved
-      <footer>
-        <div class="flex-col">
-          <img src="./images/logo.svg" alt="easy-bank-logo" class="logo" />
-          <div id="social-media-links" class="flex align-center gap-16"></div>
-        </div>
+      </section>
+      <section class="footer-section flex-col">
+        <footer class="flex justify-between gap-24 align-center">
+          <div
+            class="flex-col justify-between align-center gap-16 social-media m-auto"
+          >
+            <img
+              src="./images/logo-light.svg"
+              alt="easy-bank-logo"
+              class="logo"
+            />
+            <div id="social-media-links" class="flex align-center gap-16"></div>
+          </div>
+          <ul class="footer-links flex-col gap-16">
+            <li class="link">About Us</li>
+            <li class="link">Contact</li>
+            <li class="link">Blog</li>
+          </ul>
+          <ul class="footer-links flex-col gap-16">
+            <li class="link">Careers</li>
+            <li class="link">Support</li>
+            <li class="link">Privacy Policy</li>
+          </ul>
+          <div class="flex-col align-start justify-between gap-16 rights">
+            <button class="primary-btn">Request Invite</button>
+            <p>© Easybank. All Rights Reserved</p>
+          </div>
+        </footer>
         <div class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          >. Coded by
+          <a href="https://github.com/salman-abdulqadir">Salman A. Saleh</a>.
         </div>
-      </footer>
+      </section>
     </main>
     <script src="./script.js"></script>
   </body>

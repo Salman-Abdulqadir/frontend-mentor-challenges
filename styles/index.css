@@ -48,6 +48,8 @@ a {
 a:hover,
 .link:hover {
   color: var(--lime-green);
+  fill: var(--lime-green);
+  stroke: var(--lime-green);
 }
 .link {
   cursor: pointer;
@@ -84,6 +86,12 @@ a:hover,
 .p-16 {
   padding: 16px;
 }
+.m-auto {
+  margin: auto;
+}
+.mt-24 {
+  margin-top: 24px;
+}
 .content {
   display: contents;
 }
@@ -101,9 +109,10 @@ a:hover,
   opacity: 0.8;
 }
 .attribution {
+  color: var(--very-light-gray);
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--lime-green);
 }

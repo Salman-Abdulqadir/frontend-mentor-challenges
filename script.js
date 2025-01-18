@@ -53,29 +53,25 @@ const renderArticles = () => {
       imgSrc: "./images/image-currency.jpg",
       author: "Claire Robinson",
       title: "Receive money in any currency with no fees",
-      desc: `The world is getting smaller and we’re becoming more mobile. So why should you be forced to only
-      receive money in a single … `,
+      desc: `The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single … `,
     },
     {
       imgSrc: "./images/image-restaurant.jpg",
       author: "Wilson Hutton",
       title: "Treat yourself without worrying about money",
-      desc: `Our simple budgeting feature allows you to separate out your
-      spending and set realistic limits each month. That means you … `,
+      desc: `Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you … `,
     },
     {
       imgSrc: "./images/image-plane.jpg",
       author: "Wilson Hutton",
       title: "Take your Easybank card wherever you go",
-      desc: `We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re
-      abroad. We’ll even show you …  `,
+      desc: `We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …  `,
     },
     {
       imgSrc: "./images/image-confetti.jpg",
       author: "Claire Robinson",
       title: "Our invite-only Beta accounts are now live!",
-      desc: `After a lot of hard work by the whole team, we’reexcited to launch our closed beta. It’s easy to request an invite through
-      the site ...`,
+      desc: `After a lot of hard work by the whole team, we’reexcited to launch our closed beta. It’s easy to request an invite through the site ...`,
     },
   ];
 
@@ -167,3 +163,39 @@ function main() {
 }
 
 main();
+
+// nav bar button functionality
+const navBarImg = document.createElement("img");
+const navBarImgLogos = {
+  open: "./images/icon-hamburger.svg",
+  close: "./images/icon-close.svg",
+};
+navBarImg.alt = "Nav bar button";
+navBarImg.src = navBarImgLogos.open;
+navBarImg.style.cursor = "pointer";
+
+const navBarBtn = document.getElementById("mobile-nav-btn");
+navBarBtn.appendChild(navBarImg);
+
+const mobileNav = document.querySelector(".mobile-nav");
+const navBar = mobileNav.children?.[0];
+mobileNav.dataset.isOpen = false;
+
+navBarBtn.addEventListener("click", (e) => {
+  const { isOpen = "false" } = mobileNav.dataset || {};
+  const nextState = isOpen === "true" ? "false" : "true";
+  const isNavBarOpen = nextState === "true";
+  navBarImg.src = isNavBarOpen ? navBarImgLogos.close : navBarImgLogos.open;
+  mobileNav.dataset.isOpen = nextState;
+  if (isNavBarOpen) {
+    mobileNav.style.opacity = isNavBarOpen ? "1" : "0";
+    setTimeout(() => {
+      navBar.style.transform = `translateX(${isNavBarOpen ? "0" : "150%"})`;
+    }, 100);
+  } else {
+    navBar.style.transform = `translateX(${isNavBarOpen ? "0" : "150%"})`;
+    setTimeout(() => {
+      mobileNav.style.opacity = isNavBarOpen ? "1" : "0";
+    }, 300);
+  }
+});
