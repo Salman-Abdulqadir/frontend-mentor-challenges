@@ -1,45 +1,109 @@
-# Frontend Mentor Challenges
+# Browser Extensions Manager
 
-This repository contains my solutions to various Frontend Mentor challenges.
+A modern, responsive web application for managing browser extensions with an intuitive user interface and seamless dark mode support.
 
-## Completed Projects
+![Extensions Manager Logo](/src/assets/images/logo.svg)
 
-Here's a list of completed projects with links to their Frontend Mentor pages, preview images, and live demo links:
+## Features
 
-### 1. Mortgage repayment calculator
+- 🎯 **Extension Management**: Easily activate, deactivate, and remove browser extensions
+- 🔍 **Smart Search**: Real-time search functionality across extension names and descriptions
+- 🏷️ **Filtering System**: Quick filters for viewing all, active, or inactive extensions
+- 🌓 **Dark Mode**: Seamless theme switching with system preference support
+- 🎨 **Modern UI**: Clean, responsive design with smooth transitions
+- 📱 **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
+- 🔔 **Toast Notifications**: Instant feedback for user actions
 
-This mortgage calculator is an excellent project for practicing working with forms, client-side validation, and updating the DOM.
+## Tech Stack
 
-- [Preview](https://fe-mentor-mortgage.netlify.app/)
+### Frontend
 
-- [Frontend Mentor Challenge Page](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73)
+- **React**: UI library for building component-based interfaces
+- **TypeScript**: Static typing for enhanced code reliability
+- **Vite**: Next-generation frontend tooling for fast development
+- **TailwindCSS**: Utility-first CSS framework for modern designs
+- **React Hot Toast**: Lightweight toast notifications
 
-- Technologies used: React, Tailwind CSS, TypeScript, Vite
+### State Management
 
-- Instructions
+- **Zustand**: Lightweight state management with minimal boilerplate
+- **Custom Hooks**: Modular and reusable state logic
 
-```bash
-  git clone https://github.com/your-username/frontend-mentor-challenges.git
-  git checkout mortgage-repayment-calculator
+### Development Tools
+
+- **ESLint**: Code linting for consistent code style
+- **Prettier**: Code formatting for clean, consistent code
+- **TypeScript**: Static type checking
+
+## Project Structure
+
+```
+browser-extensions-manager/
+├── src/
+│   ├── assets/         # Static assets (images, icons)
+│   ├── components/     # Reusable React components
+│   ├── store/         # Zustand store and state management
+│   ├── types/         # TypeScript type definitions
+│   ├── App.tsx        # Main application component
+│   └── main.tsx       # Application entry point
 ```
 
-![Mortgage repayment calculator](./assets/mortgage-repayment-calculator.png)
+## Design Methodologies
 
-### 2. Order Summary Component
+### Component Architecture
 
-A perfect project for newbies who are starting to build confidence with layouts!
+- **Atomic Design**: Components are built following atomic design principles
+- **Composition**: Emphasis on component composition over inheritance
+- **Reusability**: Components are designed to be reusable and maintainable
 
-- [Preview](https://salman-abdulqadir.github.io/frontend-mentor-challenges/)
+### Styling Approach
 
-- [Frontend Mentor Challenge Page](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
+- **Utility-First**: Using TailwindCSS for rapid UI development
+- **Dark Mode**: System-aware theme switching with CSS variables
+- **Responsive Design**: Mobile-first approach with breakpoint-based adaptations
 
-- Technologies used: HTML, CSS
+### State Management
 
-- Instructions
+- **Single Source of Truth**: Centralized state management with Zustand
+- **Immutable Updates**: State updates follow immutability principles
+- **Action-Based**: Clear and predictable state modifications
+
+### Performance Optimizations
+
+- **Code Splitting**: Lazy loading for optimal bundle size
+- **Memoization**: Strategic use of React.memo and useMemo
+- **Efficient Renders**: Optimized component re-renders
+
+## Getting Started
+
+1. Clone the repository:
 
 ```bash
-  git clone https://github.com/your-username/frontend-mentor-challenges.git
-  git checkout order-summary-component
+git clone https://github.com/yourusername/browser-extensions-manager.git
 ```
 
-![Order Summary Component](./assets/order-summary-component.png)
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Build for production:
+
+```bash
+npm run build
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
