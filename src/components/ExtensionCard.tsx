@@ -15,12 +15,20 @@ export function ExtensionCard({
 }: ExtensionCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // Function to get the image URL
+  const getImageUrl = (path: string) => {
+    // Remove the ./ prefix if it exists
+    const cleanPath = path.replace("./", "");
+    // Use Vite's import.meta.url to resolve the asset
+    return new URL(`../${cleanPath}`, import.meta.url).href;
+  };
+
   return (
     <>
       <div className="bg-white dark:bg-neutral-800 rounded-2xl p-6 border border-neutral-200 dark:border-neutral-600 min-h-[200px] flex flex-col">
         <div className="flex items-start gap-4 flex-1">
           <img
-            src={extension.logo}
+            src={getImageUrl(extension.logo)}
             alt={`${extension.name} logo`}
             className="w-12 h-12 rounded-xl"
           />
