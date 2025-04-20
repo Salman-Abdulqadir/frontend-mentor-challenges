@@ -1,32 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 @import "tailwindcss";
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-VariableFont_wght.ttf")
-    format("truetype-variations");
-  font-weight: 100 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-Italic-VariableFont_wght.ttf")
-    format("truetype-variations");
-  font-weight: 100 800;
-  font-style: normal;
-}
 
 @theme {
   /* Screen sizes */
@@ -34,14 +7,24 @@
   --breakpoint-desktop: 1440px;
 
   /* Colors */
-  --color-green-light: hsl(148, 38%, 91%);
-  --color-green-medium: hsl(169, 82%, 27%);
-  --color-green-dark: hsl(169, 82%, 20%);
-  --color-grey-medium: hsl(186, 15%, 59%);
-  --color-grey-dark: hsl(187, 24%, 22%);
-  --color-red: hsl(0, 66%, 54%);
+  --color-soft-red: hsl(358, 79%, 66%);
+  --color-pale-red: hsl(357, 100%, 86%);
+
+  --color-moderate-blue: hsl(238, 40%, 52%);
+  --color-dark-blue: hsl(212, 24%, 26%);
+  --color-grayish-blue: hsl(211, 10%, 45%);
+  --color-light-grayish-blue: hsl(239, 57%, 85%);
+
+  --color-light-gray: hsl(223, 19%, 93%);
+  --color-very-light-gray: hsl(228, 33%, 97%);
+  --color-white: hsl(0, 0%, 100%);
 }
 
 html {
-  font-family: Karla, sans-serif;
+  font-family: "Rubik", sans-serif;
+  @apply bg-light-gray;
+}
+
+p {
+  @apply text-grayish-blue;
 }
