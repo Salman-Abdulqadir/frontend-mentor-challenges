@@ -1,5 +1,5 @@
 import React from "react";
-
+import radioCheckIcon from "../assets/images/icon-radio-selected.svg";
 const Selector = ({
   label,
   required,
@@ -43,10 +43,7 @@ const Selector = ({
               />
 
               {selected === option ? (
-                <img
-                  src="/src/assets/images/icon-radio-selected.svg"
-                  alt="selected icon"
-                />
+                <img src={radioCheckIcon} alt="selected icon" />
               ) : (
                 <div className="h-[20px] w-[20px] rounded-full border border-grey-dark" />
               )}

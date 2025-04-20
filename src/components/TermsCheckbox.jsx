@@ -1,5 +1,5 @@
 import React from "react";
-
+import checkBoxIcon from "../assets/images/icon-checkbox-check.svg";
 const TermsCheckBox = ({ label, error, checked, setChecked, required }) => {
   return (
     <fieldset className="space-y-1">
@@ -16,10 +16,7 @@ const TermsCheckBox = ({ label, error, checked, setChecked, required }) => {
         />
 
         {checked ? (
-          <img
-            src="/src/assets/images/icon-checkbox-check.svg"
-            alt="checked icon"
-          />
+          <img src={checkBoxIcon} alt="checked icon" />
         ) : (
           <div className="h-[18px] w-[18px] border border-grey-dark" />
         )}
