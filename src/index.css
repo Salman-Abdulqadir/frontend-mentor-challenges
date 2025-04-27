@@ -1,47 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
 @import "tailwindcss";
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-VariableFont_wght.ttf")
-    format("truetype-variations");
-  font-weight: 100 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-Italic-VariableFont_wght.ttf")
-    format("truetype-variations");
-  font-weight: 100 800;
-  font-style: normal;
-}
 
 @theme {
   /* Screen sizes */
   --breakpoint-mobile: 375px;
   --breakpoint-desktop: 1440px;
 
-  /* Colors */
-  --color-green-light: hsl(148, 38%, 91%);
-  --color-green-medium: hsl(169, 82%, 27%);
-  --color-green-dark: hsl(169, 82%, 20%);
-  --color-grey-medium: hsl(186, 15%, 59%);
-  --color-grey-dark: hsl(187, 24%, 22%);
-  --color-red: hsl(0, 66%, 54%);
+  /* Colors - Primary */
+  --color-cyan-soft: hsl(174, 77%, 80%);
+  --color-cyan-strong: hsl(174, 86%, 45%);
+  --color-red-light-grayish: hsl(14, 92%, 95%);
+  --color-red-light: hsl(15, 100%, 70%);
+  --color-blue-pale: hsl(226, 100%, 87%);
+
+  /* Colors - Neutral */
+  --color-white: hsl(0, 0%, 100%);
+  --color-blue-very-pale: hsl(230, 100%, 99%);
+  --color-blue-light-grayish-1: hsl(224, 65%, 95%);
+  --color-blue-light-grayish-2: hsl(223, 50%, 87%);
+  --color-blue-grayish: hsl(225, 20%, 60%);
+  --color-blue-dark-desaturated: hsl(227, 35%, 25%);
 }
 
 html {
-  font-family: Karla, sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
 }
