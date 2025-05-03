@@ -1,30 +1,15 @@
 @import "tailwindcss";
 @font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-Regular.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-Bold.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-VariableFont_wght.ttf")
-    format("truetype-variations");
-  font-weight: 100 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/Karla-Italic-VariableFont_wght.ttf")
-    format("truetype-variations");
-  font-weight: 100 800;
   font-style: normal;
 }
 
@@ -34,14 +19,16 @@
   --breakpoint-desktop: 1440px;
 
   /* Colors */
-  --color-green-light: hsl(148, 38%, 91%);
-  --color-green-medium: hsl(169, 82%, 27%);
-  --color-green-dark: hsl(169, 82%, 20%);
-  --color-grey-medium: hsl(186, 15%, 59%);
-  --color-grey-dark: hsl(187, 24%, 22%);
-  --color-red: hsl(0, 66%, 54%);
+  --color-grey: hsl(0, 0%, 58%);
+  --color-blue-dark: hsl(234, 29%, 20%);
+  --color-blue-light: hsl(235, 18%, 26%);
+  --color-red: hsl(4, 100%, 67%);
 }
 
 html {
-  font-family: Karla, sans-serif;
+  font-family: Roboto, sans-serif;
+}
+
+p {
+  color: var(--color-blue-light);
 }

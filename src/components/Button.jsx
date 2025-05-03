@@ -1,13 +1,15 @@
 import React from "react";
 
-const Button = (buttonprops) => {
+const Button = ({ disabled, ...props }) => {
   return (
     <button
-      {...buttonprops}
-      className={
-        `p-2 w-full transition-all duration-300 bg-green-medium hover:bg-green-dark text-white rounded-md cursor-pointer` +
-        ` ${buttonprops.className}`
-      }
+      disabled={disabled}
+      className={` p-3 rounded-lg text-white w-full ${
+        !disabled
+          ? "cursor-pointer bg-blue-dark hover:bg-gradient-to-r hover:from-red hover:to-red/80 hover:drop-shadow-lg hover:drop-shadow-red transition-shadow duration-300"
+          : "bg-grey cursor-not-allowed"
+      }`}
+      {...props}
     />
   );
 };
