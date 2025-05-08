@@ -32,9 +32,8 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
           BRANCH_NAME="${GITHUB_REF##*/}"
-          netlify deploy \
-            --dir=dist \  # or your build output folder
+          netlify deploy --dir=dist \
             --message="Deploy from $BRANCH_NAME" \
-            --prod-if-unmatched \
             --branch="$BRANCH_NAME" \
+            --context=branch-deploy \
             --site="$NETLIFY_SITE_ID"
