@@ -1,6 +1,4 @@
-import { IProduct } from "../../types/products.types";
-
-export const products: IProduct[] = [
+export const products: any[] = [
   {
     id: "1",
     image: {

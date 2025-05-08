@@ -13,7 +13,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   product,
   onAdd,
   onIncreaseOrDecrease,
-  onDelete,
+  // onDelete,
 }) => {
   const { image, name, category, price, quantity } = product;
   return (
