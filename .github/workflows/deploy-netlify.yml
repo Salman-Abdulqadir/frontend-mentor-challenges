@@ -24,7 +24,7 @@ jobs:
       - name: Build the project
         run: yarn run build
       - name: Install Netlify CLI
-        run: yarn add -g netlify-cli
+        run: yarn global add netlify-cli
 
       - name: Deploy to Netlify
         env:
