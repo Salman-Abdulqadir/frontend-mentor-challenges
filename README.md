@@ -1,23 +1,12 @@
-# Product List with Cart | Frontend Mentor Challenge
+# React + Vite
 
-This is a solution to the Product List with Cart challenge from Frontend Mentor, implemented using modern web technologies.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-![Design preview for Product List with Cart challenge](./preview.jpg)
+Currently, two official plugins are available:
 
-## 🚀 Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- Interactive product listing with dynamic cart functionality
-- Real-time cart updates and calculations
-- Responsive design for all device sizes
-- Product filtering and sorting capabilities
-- Persistent cart data using local storage
+## Expanding the ESLint configuration
 
-## 🛠️ Built With
-
-- [React](https://reactjs.org/) - JavaScript library for building user interfaces
-- [TypeScript](https://www.typescriptlang.org/) - Static type checking
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [DaisyUI](https://daisyui.com/) - Component library for Tailwind CSS
-- [Vite](https://vitejs.dev/) - Next generation frontend tooling
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
