@@ -26,14 +26,17 @@ const App = () => {
             weekly: "Week",
             monthly: "Month",
           }?.[selectedTimeframe];
+          const formatedTime = (time) => `${time}${time > 1 ? "hrs" : "hr"}`;
           return (
             <TrackingCard
               key={`card-${item.title}-${index}`}
               cardIcon={item.cardIcon}
               bgColor={item.bgColor}
               title={item.title}
-              currentValue={`${timeframe?.current}hrs`}
-              previousValue={`Last ${previousValueLabel} - ${timeframe?.previous}hrs`}
+              currentValue={formatedTime(timeframe?.current)}
+              previousValue={`Last ${previousValueLabel} - ${formatedTime(
+                timeframe?.previous
+              )}`}
             />
           );
         })}
