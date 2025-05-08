@@ -29,10 +29,12 @@ jobs:
       - name: Deploy to Netlify
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
           BRANCH_NAME="${GITHUB_REF##*/}"
           netlify deploy \
-            --dir=dist \ # or your build output folder
+            --dir=dist \  # or your build output folder
             --message="Deploy from $BRANCH_NAME" \
             --prod-if-unmatched \
-            --branch="$BRANCH_NAME"
+            --branch="$BRANCH_NAME" \
+            --site="$NETLIFY_SITE_ID"
