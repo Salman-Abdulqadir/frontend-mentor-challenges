@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+@import "tailwindcss";
+@import "./animations.css";
+
+@theme inline {
+  --color-dark-blue-1: hsl(236, 21%, 26%);
+  --color-dark-blue-2: hsl(235, 16%, 14%);
+  --color-dark-blue-3: hsl(234, 17%, 12%);
+
+  --color-greyish-blue: hsl(237, 18%, 59%);
+  --color-soft-red: hsl(345, 95%, 68%);
+}
+
+@layer base {
+  body {
+    font-family: "Red Hat Text", sans-serif;
+    color: var(--color-greyish-blue);
+    background-color: var(--color-dark-blue-3);
+    background-image: url(../assets/images/bg-stars.svg);
+    font-size: 14px;
+  }
+  footer {
+    background-image: url(../assets/images/pattern-hills.svg);
+  }
+
+  .segement-overlay.flip .segement-top {
+    animation: flip-top 0.8s linear;
+  }
+
+  .segement-overlay.flip .segement-bottom {
+    animation: flip-bottom 0.8s linear;
+  }
+}
