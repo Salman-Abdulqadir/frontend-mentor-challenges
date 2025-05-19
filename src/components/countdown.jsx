@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import FlipCard from "./flip-card";
 
+const format = (value) => (value < 1 ? "00" : value < 10 ? "0" + value : value);
+
 function getTimeRemaining(endtime) {
   const total = Date.parse(endtime) - Date.parse(new Date());
   const seconds = Math.floor((total / 1000) % 60);
@@ -10,19 +12,19 @@ function getTimeRemaining(endtime) {
 
   return {
     total,
-    days: days < 10 ? "0" + days : days,
-    hours: hours < 10 ? "0" + hours : hours,
-    minutes: minutes < 10 ? "0" + minutes : minutes,
-    seconds: seconds < 10 ? "0" + seconds : seconds,
+    days: format(days),
+    hours: format(hours),
+    minutes: format(minutes),
+    seconds: format(seconds),
   };
 }
 
-const Countdown = () => {
-  const [value, setValue] = useState(getTimeRemaining(new Date("2025-06-23")));
+const Countdown = ({ endDate }) => {
+  const [value, setValue] = useState(getTimeRemaining(new Date(endDate)));
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setValue(getTimeRemaining(new Date("2025-06-23")));
+      setValue(getTimeRemaining(new Date(endDate)));
     }, 1000);
     return () => clearInterval(interval);
   }, []);
