@@ -9,7 +9,7 @@ const App = () => {
     <main className="flex flex-col justify-between h-screen">
       <section className="flex-1 space-y-24 flex flex-col justify-center">
         <header className="flex gap-4 justify-center items-center">
-          <h1 className="text-white text-2xl tracking-[8px] font-light">
+          <h1 className="text-white text-lg md:text-xl lg:text-2xl tracking-[8px] font-light">
             WE'RE LAUNCHING SOON
           </h1>
           <SoundButton />
