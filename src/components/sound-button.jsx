@@ -1,6 +1,6 @@
 import { useSound } from "../store/sound";
 
-import Volume2 from "./icons/Volume2";
+import Volume2 from "./icons/volume2";
 import VolumeOff from "./icons/volume-off";
 
 const SoundButton = () => {
