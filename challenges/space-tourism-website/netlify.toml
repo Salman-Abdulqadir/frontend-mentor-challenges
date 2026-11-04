@@ -1,0 +1,6 @@
+# Netlify site fe-mentor-explore-space builds this folder (base directory: challenges/space-tourism-website).
+[build]
+  command = "npm run build"
+  publish = ".next"
+  # Skip the build when nothing in this folder changed.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."

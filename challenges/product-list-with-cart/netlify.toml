@@ -1,0 +1,6 @@
+# Netlify site fe-mentor-s builds this folder (base directory: challenges/product-list-with-cart).
+[build]
+  command = "npm run build"
+  publish = "dist"
+  # Skip the build when nothing in this folder changed.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."

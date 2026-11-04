@@ -1,0 +1,6 @@
+# Netlify site job-listing-ui builds this folder (base directory: challenges/job-listings-with-filtering).
+[build]
+  command = "npm run build"
+  publish = "dist"
+  # Skip the build when nothing in this folder changed.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."

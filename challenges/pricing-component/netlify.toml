@@ -1,0 +1,6 @@
+# Netlify site fe-mentor-pricing-component builds this folder (base directory: challenges/pricing-component).
+[build]
+  command = "npm run build"
+  publish = "dist"
+  # Skip the build when nothing in this folder changed.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."
