@@ -1,0 +1,46 @@
+# Builds the challenges that have no Netlify site, plus the gallery, and deploys them to GitHub Pages
+# at https://salman-abdulqadir.github.io/frontend-mentor-challenges/<slug>/
+name: Pages
+
+on:
+  push:
+    branches: [main]
+    paths: [challenges/**, scripts/build.mjs, challenges.json, .github/workflows/pages.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}
+        run: |
+          slugs=$(node -e 'console.log(require("./challenges.json").filter(c => !c.site).map(c => c.slug).join(" "))')
+          node scripts/build.mjs $slugs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

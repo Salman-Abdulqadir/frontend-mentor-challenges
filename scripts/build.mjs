@@ -1,5 +1,6 @@
 // Builds every challenge into dist/<slug>/ and writes the gallery page at dist/index.html.
 // Usage: node scripts/build.mjs [slug ...]   (no args = all challenges)
+//        BASE_PATH=/repo-name node scripts/build.mjs   (serve from a sub-path, e.g. GitHub Pages)
 import { execSync } from "node:child_process";
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -8,6 +9,7 @@ const root = new URL("..", import.meta.url).pathname;
 const dist = join(root, "dist");
 const challenges = JSON.parse(readFileSync(join(root, "challenges.json"), "utf8"));
 const only = process.argv.slice(2);
+const prefix = (process.env.BASE_PATH ?? "").replace(/\/$/, "");
 const selected = only.length ? challenges.filter((c) => only.includes(c.slug)) : challenges;
 
 if (!only.length) rmSync(dist, { recursive: true, force: true });
@@ -20,7 +22,7 @@ const failed = [];
 for (const { slug } of selected) {
   const dir = join(root, "challenges", slug);
   const out = join(dist, slug);
-  const base = `/${slug}/`;
+  const base = `${prefix}/${slug}/`;
   rmSync(out, { recursive: true, force: true });
   console.log(`\n=== ${slug}`);
   try {
@@ -64,7 +66,7 @@ function gallery(items) {
   const cards = items
     .map(
       (c) => `      <li>
-        <a href="${c.site ?? `/${c.slug}/`}">
+        <a href="${c.site ?? `${prefix}/${c.slug}/`}">
           <h2>${esc(c.name)}</h2>
           <p>${esc(c.stack.join(" · "))}</p>
           <time datetime="${c.updated}">${month(c.updated)}</time>
