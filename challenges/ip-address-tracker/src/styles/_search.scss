@@ -1,0 +1,16 @@
+.search-section{
+    justify-content: center;
+    width: 100%;
+    min-height: 40vh;
+    background-image: url("../assets/pattern-bg.png");
+    background-size: cover;
+    h1{
+        color: white;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    input{
+        min-width: 25rem;
+        max-width: 80%;
+    }
+}
