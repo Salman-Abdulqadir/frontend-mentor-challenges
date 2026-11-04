@@ -1,4 +1,3 @@
-import React from "react";
 import { useCardDetails } from "../../contexts/CardDetailsContext";
 import backCardBg from "../../assets/images/bg-card-back.png";
 const BackPage = () => {

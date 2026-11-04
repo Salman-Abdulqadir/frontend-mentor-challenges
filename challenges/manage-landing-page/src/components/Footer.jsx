@@ -6,5 +6,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-ssh-keygen -t ed25519 -C "salmanabdulkadir82@gmail.com"

@@ -1,4 +1,3 @@
-import React from "react";
 import cardLogo from "../../assets/images/card-logo.svg";
 import frontCardBg from "../../assets/images/bg-card-front.png";
 import { useCardDetails } from "../../contexts/CardDetailsContext";
