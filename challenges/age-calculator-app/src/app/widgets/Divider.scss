@@ -1,0 +1,35 @@
+.age-calculator-divider-wrapper {
+  display: flex;
+  align-items: center;
+  .age-calculator-divider {
+    height: 1px;
+    width: 100%;
+    background-color: $light-grey;
+    flex: 1;
+  }
+  .age-calculator-divider-image {
+    width: 70px;
+    background-color: $purple;
+    border-radius: 50%;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $off-black;
+    }
+  }
+  @media screen and (max-width: $break-point-mobile) {
+    margin-top: 3rem;
+
+    display: block;
+    .age-calculator-divider {
+      height: 1px;
+    }
+    .age-calculator-divider-image {
+      position: relative;
+
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
