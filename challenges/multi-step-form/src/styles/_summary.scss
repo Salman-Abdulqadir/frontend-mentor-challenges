@@ -1,0 +1,31 @@
+.summary-page {
+  padding: 2rem 4rem;
+
+  .summary{
+    margin-top: 3rem;
+    gap: 2rem;
+    background-color: hsla(243, 100%, 62%, 0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    .change-plan{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+  }
+  .total{
+    padding: 0rem 1.5rem;
+    h2{
+        color: hsl(243, 100%, 62%);
+    }
+  }
+  .confirm {
+    background-color: hsl(243, 100%, 62%);
+    color: white;
+    align-self: flex-end;
+    border: none;
+    font-weight: bold;
+    &:hover {
+      background-color: hsl(213, 79%, 33%);
+    }
+  }
+}

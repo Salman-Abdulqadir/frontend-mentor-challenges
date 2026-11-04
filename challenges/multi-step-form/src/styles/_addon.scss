@@ -1,0 +1,26 @@
+.addons{
+    padding: 2rem 4rem;
+    .content{
+        gap: 3rem;
+    }
+    .addon-card{
+        .flex{
+            align-items: center;
+        }
+        align-items: center;
+        padding: 1.5rem;
+        border: 1px solid hsl(243, 100%, 62%);
+        border-radius: 10px;
+        h5{
+            color: hsl(243, 100%, 62%);
+        }
+        input[type="checkbox"]{
+            width: 1rem;
+            height: 1rem;
+            accent-color: hsl(243,100%,62%);
+        }
+    }
+    .active-card{
+        background-color: hsla(243, 100%, 62%, 0.09);
+    }
+}

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 100%, 97%);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: "Ubuntu", sans-serif;
+}
+input,
+button {
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-size: 1rem;
+}
+input {
+  border: 1px solid hsl(231, 11%, 63%);
+  outline-color: hsl(243, 100%, 62%);
+}
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+p {
+  color: grey;
+}
+.flex,
+.flex-col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.flex-col {
+  flex-direction: column;
+}
+.next-btn {
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  align-self: flex-end;
+  border: none;
+  font-weight: bold;
+  &:hover {
+    background-color: hsl(213, 79%, 33%);
+  }
+}
+.App {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  overflow-y: hidden;
+  transition: all 0.3s ease;
+  min-width: 50vw;
+  min-height: 65vh;
+  header{
+    flex: 1 auto
+  }
+  section{
+    flex: 2 auto
+  }
+  
+}
+
+@import "./nav";
+@import "./info";
+@import "./plan";
+@import "./addon";
+@import "./summary";

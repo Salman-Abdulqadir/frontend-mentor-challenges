@@ -1,0 +1,36 @@
+.main-header{
+    min-height: 50vh;
+    background-image: url("../assets/bg-sidebar-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    padding: 2rem;
+    .flex-col{
+        gap: 2rem;
+    }
+    .flex{
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        align-items: center;
+        justify-content: flex-start;
+        h4{
+            font-size: small;
+            padding: 1rem;
+            border-radius: 50%;
+            color: white;
+            border: 1px solid white;
+            transition: all 0.5s ease;
+        }
+        h2{
+            color: white;
+            font-size: 1rem;
+        }
+      
+    }
+    .active-page{
+        border-color: hsl(206, 94%, 87%) !important;
+        background-color: hsl(206, 94%, 87%);
+        color: black !important;
+    }
+}
