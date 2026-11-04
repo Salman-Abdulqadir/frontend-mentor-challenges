@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Order summary card</title>
+  </head>
+  <body class="flex flex-col align-center justify-between gap-8">
+    <div class="card-wrapper flex flex-col align-center justify-center">
+      <div class="card">
+        <img src="./images/illustration-hero.svg" alt="music-vector" />
+        <div class="card-details flex flex-col gap-24">
+          <h1 class="primary-text">Order Summary</h1>
+          <p class="secondary-text">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="card-details-plans flex align-center justify-between">
+            <div class="flex align-center gap-16">
+              <img src="./images/icon-music.svg" alt="music-icon" />
+              <div>
+                <h3 class="primary-text">Annual Plan</h3>
+                <p class="secondary-text">$59.99/year</p>
+              </div>
+            </div>
+            <a href="#">Change</a>
+          </div>
+          <button class="card-payment-btn">Proceed to Payment</button>
+          <span class="card-cancel-order-btn primary-text">Cancel Order</span>
+        </div>
+      </div>
+    </div>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/salman-abdulqadir">Salman Abdulqadir</a>.
+    </footer>
+  </body>
+</html>
