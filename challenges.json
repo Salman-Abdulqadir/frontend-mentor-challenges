@@ -1,0 +1,357 @@
+[
+  {
+    "slug": "calculator-app",
+    "name": "Calculator app",
+    "stack": [
+      "React",
+      "Tailwind"
+    ],
+    "updated": "2025-05",
+    "from": "repo calculator",
+    "site": "https://fe-mentor-calculator.netlify.app"
+  },
+  {
+    "slug": "calculator-v1",
+    "name": "Calculator app (v1)",
+    "stack": [
+      "React"
+    ],
+    "updated": "2025-05",
+    "from": "hub branch"
+  },
+  {
+    "slug": "launch-countdown-timer",
+    "name": "Launch countdown timer",
+    "stack": [
+      "React",
+      "Tailwind"
+    ],
+    "updated": "2025-05",
+    "from": "repo launch-countdown-timer",
+    "site": "https://fe-mentor-launch-countdown-timer.netlify.app"
+  },
+  {
+    "slug": "manage-landing-page",
+    "name": "Manage landing page",
+    "stack": [
+      "React",
+      "Tailwind"
+    ],
+    "updated": "2025-05",
+    "from": "repo manage-landing-page"
+  },
+  {
+    "slug": "newsletter-sign-up",
+    "name": "Newsletter sign-up",
+    "stack": [
+      "React",
+      "Tailwind"
+    ],
+    "updated": "2025-05",
+    "from": "hub branch",
+    "site": "https://fe-mentor-newsletter-signup.netlify.app"
+  },
+  {
+    "slug": "product-list-with-cart",
+    "name": "Product list with cart",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "updated": "2025-05",
+    "from": "hub branch",
+    "site": "https://fe-mentor-s.netlify.app"
+  },
+  {
+    "slug": "time-tracking-dashboard",
+    "name": "Time tracking dashboard",
+    "stack": [
+      "React",
+      "Tailwind"
+    ],
+    "updated": "2025-05",
+    "from": "hub branch",
+    "site": "https://fe-mentor-time-tracking-dashboard.netlify.app"
+  },
+  {
+    "slug": "todo-app",
+    "name": "Todo app",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "updated": "2025-05",
+    "from": "repo TodoList",
+    "site": "https://fe-mentor-todo-app.netlify.app"
+  },
+  {
+    "slug": "contact-form",
+    "name": "Contact form",
+    "stack": [
+      "React",
+      "Tailwind"
+    ],
+    "updated": "2025-04",
+    "from": "hub branch",
+    "site": "https://fe-mentor-contact-form.netlify.app"
+  },
+  {
+    "slug": "interactive-comments-section",
+    "name": "Interactive comments section",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "updated": "2025-04",
+    "from": "hub branch",
+    "site": "https://fe-mentor-interactive-comments.netlify.app"
+  },
+  {
+    "slug": "pricing-component",
+    "name": "Pricing component",
+    "stack": [
+      "React",
+      "Tailwind"
+    ],
+    "updated": "2025-04",
+    "from": "hub branch",
+    "site": "https://fe-mentor-pricing-component.netlify.app"
+  },
+  {
+    "slug": "space-tourism-website",
+    "name": "Space tourism website",
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "updated": "2025-04",
+    "from": "repo explore-space",
+    "site": "https://fe-mentor-explore-space.netlify.app"
+  },
+  {
+    "slug": "browser-extensions-manager-ui",
+    "name": "Browser extensions manager UI",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "updated": "2025-03",
+    "from": "hub branch",
+    "site": "https://fe-mentor-brower-extenstion-manager.netlify.app"
+  },
+  {
+    "slug": "easybank-landing-page",
+    "name": "Easybank landing page",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "updated": "2025-01",
+    "from": "hub branch"
+  },
+  {
+    "slug": "faq-accordion",
+    "name": "FAQ accordion",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "updated": "2024-12",
+    "from": "hub branch",
+    "site": "https://fe-mentor-faq-accordion-salman.netlify.app"
+  },
+  {
+    "slug": "interactive-card-details-form",
+    "name": "Interactive card details form",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "updated": "2024-12",
+    "from": "hub branch"
+  },
+  {
+    "slug": "mortgage-repayment-calculator",
+    "name": "Mortgage repayment calculator",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "updated": "2024-10",
+    "from": "hub branch",
+    "site": "https://fe-mentor-salman.netlify.app"
+  },
+  {
+    "slug": "order-summary-component",
+    "name": "Order summary component",
+    "stack": [
+      "HTML",
+      "CSS"
+    ],
+    "updated": "2024-10",
+    "from": "hub branch"
+  },
+  {
+    "slug": "todo-app-v1",
+    "name": "Todo app (v1)",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "updated": "2024-10",
+    "from": "hub branch"
+  },
+  {
+    "slug": "tic-tac-toe",
+    "name": "Tic-tac-toe",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "updated": "2024-09",
+    "from": "hub branch"
+  },
+  {
+    "slug": "dictionary-web-app",
+    "name": "Dictionary web app",
+    "stack": [
+      "React",
+      "Tailwind"
+    ],
+    "updated": "2024-06",
+    "from": "repo dictionary",
+    "site": "https://fast-dictionary.netlify.app"
+  },
+  {
+    "slug": "notifications-page",
+    "name": "Notifications page",
+    "stack": [
+      "React",
+      "Tailwind"
+    ],
+    "updated": "2024-06",
+    "from": "repo notifications-ui",
+    "site": "https://notification-ui-frontendmentor.netlify.app"
+  },
+  {
+    "slug": "job-listings-with-filtering",
+    "name": "Job listings with filtering",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "updated": "2024-05",
+    "from": "repo job-listing-ui",
+    "site": "https://job-listing-ui.netlify.app"
+  },
+  {
+    "slug": "age-calculator-app",
+    "name": "Age calculator app",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Sass"
+    ],
+    "updated": "2024-04",
+    "from": "repo age-calculator-app",
+    "site": "https://age-calculator-4.netlify.app"
+  },
+  {
+    "slug": "rock-paper-scissors",
+    "name": "Rock paper scissors",
+    "stack": [
+      "React",
+      "styled-components",
+      "Redux"
+    ],
+    "updated": "2023-01",
+    "from": "repo rock_paper_scissor",
+    "site": "https://frontend-mentor-rock-paper-scissor.netlify.app"
+  },
+  {
+    "slug": "advice-generator-app",
+    "name": "Advice generator app",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "updated": "2022-12",
+    "from": "repo advice-generator-app"
+  },
+  {
+    "slug": "expenses-chart-component",
+    "name": "Expenses chart component",
+    "stack": [
+      "React"
+    ],
+    "updated": "2022-12",
+    "from": "repo expense_chart"
+  },
+  {
+    "slug": "ip-address-tracker",
+    "name": "IP address tracker",
+    "stack": [
+      "React",
+      "Sass",
+      "Redux"
+    ],
+    "updated": "2022-12",
+    "from": "repo ip_tracker"
+  },
+  {
+    "slug": "multi-step-form",
+    "name": "Multi-step form",
+    "stack": [
+      "React",
+      "Sass",
+      "Redux"
+    ],
+    "updated": "2022-12",
+    "from": "repo form_component"
+  },
+  {
+    "slug": "rest-countries-api",
+    "name": "REST Countries API",
+    "stack": [
+      "React",
+      "styled-components",
+      "Redux"
+    ],
+    "updated": "2022-12",
+    "from": "repo search_country"
+  },
+  {
+    "slug": "tip-calculator-app",
+    "name": "Tip calculator app",
+    "stack": [
+      "React",
+      "styled-components"
+    ],
+    "updated": "2022-12",
+    "from": "repo tip_calculator"
+  },
+  {
+    "slug": "url-shortening-api",
+    "name": "URL shortening API",
+    "stack": [
+      "React",
+      "styled-components"
+    ],
+    "updated": "2022-12",
+    "from": "repo Shortly"
+  }
+]
