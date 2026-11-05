@@ -1,10 +1,19 @@
 import { useEffect, useState } from "react";
 import FlipCard from "./flip-card";
 
+const CYCLE_MS = 14 * 24 * 60 * 60 * 1000;
+
 const format = (value) => (value < 1 ? "00" : value < 10 ? "0" + value : value);
 
+function getNextEnd(endtime, now) {
+  const end = Date.parse(endtime);
+  if (end >= now) return end;
+  return end + (Math.floor((now - end) / CYCLE_MS) + 1) * CYCLE_MS;
+}
+
 function getTimeRemaining(endtime) {
-  const total = Date.parse(endtime) - Date.parse(new Date());
+  const now = Date.parse(new Date());
+  const total = getNextEnd(endtime, now) - now;
   const seconds = Math.floor((total / 1000) % 60);
   const minutes = Math.floor((total / 1000 / 60) % 60);
   const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
@@ -27,7 +36,7 @@ const Countdown = ({ endDate }) => {
       setValue(getTimeRemaining(new Date(endDate)));
     }, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [endDate]);
   return (
     <div className="flex gap-5">
       <FlipCard value={value.days} label={"DAYS"} />
